@@ -61,4 +61,22 @@ public class BookServiceImpl implements BookService {
         bookRepository.saveAndFlush(book);
         return 0;
     }
+
+    @Override
+    public List<Integer> findbookidwhichnotborrowed() {
+        return bookRepository.findbookidwhichnotborrowed();
+    }
+
+
+
+    @Override
+    public Integer numofbookcall123(){
+        return bookRepository.numofbookcall123();
+    }
+
+    @Override
+    public List<String> findcallnum(){
+        return bookRepository.findcallnum();
+    }
+
 }

@@ -52,4 +52,15 @@ public class Title {
     public void setPublisher(String publisher) {
         this.publisher = publisher;
     }
+
+    @Override
+    public String toString() {
+        return "Title{" +
+                "callnumber='" + callnumber + '\'' +
+                ", name='" + name + '\'' +
+                ", isbn='" + isbn + '\'' +
+                ", year=" + year +
+                ", publisher='" + publisher + '\'' +
+                '}';
+    }
 }

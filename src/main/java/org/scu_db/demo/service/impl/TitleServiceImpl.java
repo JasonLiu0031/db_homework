@@ -13,5 +13,9 @@ public class TitleServiceImpl implements TitleService {
     @Autowired
     private TitleRepository titleRepository;
 
+    @Override
+    public List<Title> findbookinfobycertainname() {
+        return titleRepository.findbookinfobycertainname();
+    }
 
 }
